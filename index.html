@@ -334,15 +334,17 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 .brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
-.brand-emoji { font-size: 34px; filter: drop-shadow(0 2px 4px rgba(0,0,0,.4)); }
-.brand-name { color: #fff; font-weight: 800; font-size: 19px; letter-spacing: 1px; }
-.brand-sub { color: #9fd3ab; font-size: 11px; letter-spacing: 0.5px; }
+.brand-emoji { font-size: 34px; filter: drop-shadow(0 2px 4px rgba(0,0,0,.4)); flex-shrink: 0; }
+.brand-text { min-width: 0; }
+.brand-name { color: #fff; font-weight: 800; font-size: 19px; letter-spacing: 1px; white-space: nowrap; }
+.brand-sub { color: #9fd3ab; font-size: 11px; letter-spacing: 0.5px; white-space: nowrap; }
 .mode-badge {
   font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 999px; white-space: nowrap;
+  flex-shrink: 0;
 }
 .mode-badge.demo { background: #ffe08a; color: #7a5200; }
 .mode-badge.live { background: #51cf66; color: #06330f; }
-.top-actions { display: flex; align-items: center; gap: 8px; }
+.top-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
 .icon-btn {
   background: #1d3a28; border: 1px solid rgba(255,255,255,.18); border-radius: 10px;
   font-size: 17px; padding: 6px 10px; cursor: pointer; color: #fff;
@@ -354,6 +356,18 @@ body {
   max-width: 42vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .wallet-btn:active { transform: scale(0.97); }
+
+/* 窄屏手机（≤560px，覆盖 360–430px）：顶栏允许换行——品牌占满第一行
+   （标题 nowrap 不竖排；一行放不下时徽章在品牌行内换行，绝不与按钮重叠），
+   操作区（音效+连接按钮）另起一行右对齐。桌面布局不受影响。 */
+@media (max-width: 560px) {
+  .topbar { flex-wrap: wrap; row-gap: 8px; }
+  .brand { flex: 1 1 100%; flex-wrap: wrap; row-gap: 6px; }
+  .brand-name { font-size: 17px; }
+  .mode-badge { font-size: 10px; padding: 2px 7px; }
+  .top-actions { flex: 1 1 100%; justify-content: flex-end; }
+  .wallet-btn { max-width: none; }
+}
 
 /* ---------- 播报 ---------- */
 .ticker-wrap {
@@ -1042,7 +1056,7 @@ function sampleUrlForId(id) {
   if (window.__IMG) {
     const __w = window.__IMG[key + "_" + String(id).padStart(4, "0") + ".webp"];
     if (__w) return __w;
-    return SAMPLE_IDS[key].includes(id) ? "" : null;
+    return null;
   }
   if (SAMPLE_IDS[key].includes(id))
     return CFG.samplesBase + key + "_" + String(id).padStart(4, "0") + ".png";
@@ -1752,10 +1766,17 @@ $("#revealInfo").innerHTML = "";
 $("#revealClose").classList.add("hidden");
 $("#sparkles").innerHTML = "";
 if (url) {
+img.onerror = () => {
+img.onerror = null;
+img.classList.add("hidden");
+ph.classList.remove("hidden");
+ph.textContent = "🐼";
+};
 img.src = url;
 img.classList.remove("hidden");
 ph.classList.add("hidden");
 } else {
+img.onerror = null;
 img.classList.add("hidden");
 ph.classList.remove("hidden");
 ph.textContent = "🐼";
@@ -2197,23 +2218,7 @@ return (e.shortMessage || e.message || String(e)).slice(0, 120);
 /* ============================================================
 * 我的卡组渲染
 * ============================================================ */
-function cardEl({ imgUrl, title, tags, traitsText, selectable, freeId, selected}) {
-const div = document.createElement("div");
-div.className = "panda-card" + (selectable? " selectable": "") + (selected? " selected": "");
-if (freeId!== undefined) div.dataset.freeId = freeId;
-if (imgUrl) {
-const img = document.createElement("img");
-img.loading = "lazy";
-img.src = imgUrl;
-img.alt = title;
-img.addEventListener("error", () => {
-const ph = document.createElement("div");
-ph.className = "ph";
-ph.textContent = "🐼";
-img.replaceWith(ph);
-});
-div.appendChild(img);
-} else {
+function placeholderEl(traitsText) {
 const ph = document.createElement("div");
 ph.className = "ph";
 ph.textContent = "🐼";
@@ -2222,7 +2227,31 @@ const sm = document.createElement("small");
 sm.textContent = traitsText;
 ph.appendChild(sm);
 }
+return ph;
+}
+function cardEl({ imgUrl, title, tags, traitsText, selectable, freeId, selected}) {
+const div = document.createElement("div");
+div.className = "panda-card" + (selectable? " selectable": "") + (selected? " selected": "");
+if (freeId!== undefined) div.dataset.freeId = freeId;
+// 占位先行、真图确认加载成功后才换入：卡片先渲染熊猫占位，再用 DOM 外的
+// 探针图预加载 imgUrl，onload 后才把真图换进来；无图/加载失败/解码失败
+// 就一直留占位。旧做法是先把 <img> 塞进卡里、指望 error 事件回退占位——
+// 在部分手机浏览器里（懒加载、空 src、error 不触发等）会留下既无图又无
+// 占位的空白框，现在从结构上杜绝。
+const ph = placeholderEl(traitsText);
 div.appendChild(ph);
+if (imgUrl) {
+const probe = new Image();
+probe.onload = () => {
+if (!ph.isConnected) return;
+const img = document.createElement("img");
+img.src = imgUrl;
+img.alt = title;
+img.addEventListener("error", () => img.replaceWith(placeholderEl(traitsText)));
+ph.replaceWith(img);
+};
+probe.onerror = () => { /* 加载失败：保留占位图 */ };
+probe.src = imgUrl;
 }
 const meta = document.createElement("div");
 meta.className = "meta";
@@ -2257,7 +2286,7 @@ fg.innerHTML = "";
 free.forEach((c) => {
 const a = ATTR[c.attr];
 const el = cardEl({
-imgUrl: (window.__IMG && window.__IMG[a.img.replace(/\.png$/, ".webp")]) || "",
+imgUrl: (window.__IMG && window.__IMG[a.img.replace(/\.png$/, ".webp")]) || null,
 title: "免费卡 #" + c.id,
 tags: '<span class="attr-tag ' + a.cls + '">' + a.name + "</span>",
 selectable: true,
