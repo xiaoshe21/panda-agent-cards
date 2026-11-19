@@ -30,12 +30,8 @@
         <span id="modeBadge" class="mode-badge demo">演示模式</span>
       </div>
       <div class="top-actions">
-        <select id="networkSelect" class="net-select" title="选择网络">
-          <option value="mainnet">BSC 主网</option>
-          <option value="testnet">BSC 测试网</option>
-        </select>
         <button id="soundToggle" class="icon-btn" title="音效开关">🔊</button>
-        <button id="walletBtn" class="wallet-btn">连接钱包</button>
+        <button id="walletBtn" class="wallet-btn">连接 Agent 钱包</button>
       </div>
     </header>
 
@@ -77,6 +73,15 @@
             🎁 免费领取开局 5 张卡
           </button>
           <p id="claimHint" class="hint"></p>
+
+          <!-- 无钱包环境（普通手机浏览器打开）：币安 App 打开指引，连接 Agent 钱包 -->
+          <div id="noWalletGuide" class="gate-panel hidden">
+            <div class="gate-title">📱 请在币安 App 内打开本页，连接 Agent 钱包</div>
+            <p>本游戏需要连接你的 <b>Agent 钱包</b> 才能参与（领取 / 抽卡 / 击碎）。你现在用的浏览器没有钱包，无法连接。</p>
+            <p><b>打开方法</b>：点下方按钮复制本页链接 → 打开<b>币安 App</b> → 进入「Web3 钱包」（Agent 钱包）→ 用内置浏览器粘贴打开本页 → 点右上角「连接 Agent 钱包」。</p>
+            <button id="copyLinkBtn" class="btn btn-gate">📋 复制本页链接</button>
+            <p class="hint">没有钱包时也不用离开：下方抽卡台可以直接体验<b>演示模式</b>（本地假数据，不上链、不花钱）。</p>
+          </div>
 
           <!-- Agent ID 硬门禁：连错钱包（未持有）/ 验证失败时显示，参与按钮同步锁定 -->
           <div id="gatePanel" class="gate-panel hidden">
@@ -338,10 +343,6 @@ body {
 .mode-badge.demo { background: #ffe08a; color: #7a5200; }
 .mode-badge.live { background: #51cf66; color: #06330f; }
 .top-actions { display: flex; align-items: center; gap: 8px; }
-.net-select {
-  background: #1d3a28; color: #dff5e3; border: 1px solid rgba(255,255,255,.18);
-  border-radius: 10px; padding: 7px 6px; font-size: 13px;
-}
 .icon-btn {
   background: #1d3a28; border: 1px solid rgba(255,255,255,.18); border-radius: 10px;
   font-size: 17px; padding: 6px 10px; cursor: pointer; color: #fff;
@@ -650,8 +651,10 @@ window.__METADATA = {"seed":"panda-agent-cards-2026","count":4500,"tiers":{"ultr
 /*
  * 熊猫特工卡 — 部署配置
  * ============================================================
- * 合约部署完成后，把地址填进下面对应网络的字段即可，前端会自动
- * 从「演示模式」切换到「链上模式」。留空 = 该网络未部署 = 演示模式。
+ * 本站写死 BSC 主网（chainId 56）：只有主网，没有网络切换。
+ * 主网合约已部署（2026-11-19，见 mainnet/MAINNET.md），
+ * 地址填在下方 mainnet.contracts，前端自动进入「链上模式」；
+ * 未连接钱包时可用演示模式（本地假数据，不上链）。
  *
  * 部署顺序（见 contracts/BUILD_NOTES.md）：
  *   1. FreePandaCard
@@ -659,10 +662,6 @@ window.__METADATA = {"seed":"panda-agent-cards-2026","count":4500,"tiers":{"ultr
  *   3. FreePandaCard.setGame(PandaCards 地址)
  */
 window.PANDA_CONFIG = {
-  // 默认网络：'mainnet'（BSC 主网, chainId 56）或 'testnet'（BSC 测试网, chainId 97）
-  // 页面顶部可以切换。
-  defaultNetwork: "mainnet",
-
   networks: {
     mainnet: {
       label: "BSC 主网",
@@ -678,22 +677,6 @@ window.PANDA_CONFIG = {
         pandaCards: "0x3a6B184f96EC8931aD02f57b080224C9Ec3AF07B", // PandaCards 合约地址
         freePandaCard: "0x02A325Be648570494AFA7f7aDA669d38bb39822b", // FreePandaCard 合约地址
         deployBlock: 134483898, // PandaCards 部署区块（用于拉取历史事件，可留 0）
-      },
-    },
-    testnet: {
-      label: "BSC 测试网",
-      chainId: 97,
-      chainIdHex: "0x61",
-      rpcUrl: "https://bsc-testnet-rpc.publicnode.com",
-      explorer: "https://testnet.bscscan.com",
-      nativeSymbol: "tBNB",
-      contracts: {
-        // 测试网没有真实 Agent ID，这里是演练部署的 MockAgentID
-        // （2026-11-19 VRF 版合约演练：含 M-2 修复 + Ownable2Step + 封池 + Chainlink VRF 真协调者）
-        agentId: "0x3DD00ABa408F73d5276A8FD19A332bf85B4A872B",
-        pandaCards: "0x1d1FB21429Cee5A014C209F42A410Fc214c8617a",
-        freePandaCard: "0xFF7b6Af2F544c30Af3fD9cCc2F90df1B8B0aDdD9",
-        deployBlock: 143609071,
       },
     },
   },
@@ -1228,7 +1211,7 @@ const SFX = (() => {
  * 状态
  * ============================================================ */
 const state = {
-  network: CFG.defaultNetwork,
+  network: "mainnet", // 写死 BSC 主网（chainId 56）：只有主网，没有网络切换
   account: null,
   signer: null,
   readProvider: null,
@@ -1239,7 +1222,7 @@ const state = {
   // Agent ID 硬门禁状态：na 不适用（演示/未连接）/ checking 验证中 /
   // ok 已验证持有 / no 已验证未持有 / error 验证失败（fail safe，锁定参与）
   agentGate: "na",
-  gateSeq: 0, // 门禁检测序号：账户/网络切换时递增，过期检测结果直接丢弃
+  gateSeq: 0, // 门禁检测序号：账户切换/重新初始化时递增，过期检测结果直接丢弃
   claimed: false,
   myMain: [],
   myFree: [],
@@ -1392,7 +1375,7 @@ if (isLivePlay()) {
 b.textContent = "链上模式 · " + netCfg().label;
 b.className = "mode-badge live";
 } else if (state.live) {
-b.textContent = "合约已部署 · 连接钱包进入链上模式";
+b.textContent = "合约已部署 · 连接 Agent 钱包进入链上模式";
 b.className = "mode-badge live";
 } else {
 b.textContent = "演示模式";
@@ -1437,10 +1420,10 @@ a.textContent = state.hasAgentId? "✅ 已持有 Agent ID" + (typeof myName === 
 a.className = "status-value " + (state.hasAgentId? "ok": "warn");
 }
 } else {
-btn.textContent = "连接钱包";
+btn.textContent = "连接 Agent 钱包";
 w.textContent = state.live? "未连接": "未连接（演示模式可直接体验）";
 w.className = "status-value";
-a.textContent = state.live? "连接钱包后检测": "演示模式：默认视为已持有";
+a.textContent = state.live? "连接 Agent 钱包后检测": "演示模式：默认视为已持有";
 a.className = "status-value";
 }
 // 余额
@@ -1481,7 +1464,7 @@ hint.textContent = "请先切换到 " + netCfg().label + "。";
 } else if (state.live &&!state.account) {
 claimBtn.disabled = false;
 claimBtn.textContent = "🎁 免费领取开局 5 张卡";
-hint.textContent = "连接钱包后按 Agent ID 持有情况领取；现在点击将以演示模式领取。";
+hint.textContent = "连接 Agent 钱包后按 Agent ID 持有情况领取；现在点击将以演示模式领取。";
 } else {
 claimBtn.disabled = false;
 claimBtn.textContent = "🎁 免费领取开局 5 张卡（演示）";
@@ -1490,6 +1473,9 @@ hint.textContent = "演示模式：直接领取，体验完整流程。";
 refreshModeBadge();
 refreshGatePanel();
 refreshPendingUI();
+// 无钱包环境（普通浏览器打开）时显示币安 App 打开指引；有注入钱包或已连接则隐藏
+const nw = $("#noWalletGuide");
+if (nw) nw.classList.toggle("hidden", !!window.ethereum || !!state.account);
 }
 
 /* ============================================================
@@ -1542,7 +1528,7 @@ if (c.agentId) state.contracts.agent = new E.Contract(c.agentId, ABI.agentId, si
 async function connectWallet() {
 SFX.click();
 if (!window.ethereum) {
-toast("未检测到 MetaMask 等钱包插件 — 已为你打开演示模式 🐼");
+toast("未检测到钱包 — 请在币安 App 内打开本页并连接 Agent 钱包（状态卡下方有打开指引）；先为你打开演示模式 🐼", 4200);
 SFX.error();
 return;
 }
@@ -1563,7 +1549,7 @@ const provider = new window.ethers.BrowserProvider(window.ethereum);
 state.signer = await provider.getSigner();
 buildContracts(state.signer);
 await refreshOnChain();
-toast(state.live? "钱包已连接": "钱包已连接（合约未部署，演示模式）");
+toast(state.live? "Agent 钱包已连接": "钱包已连接（合约未部署，演示模式）");
 } catch (e) {
 toast("连接钱包失败：" + (e.message || e));
 SFX.error();
@@ -1598,7 +1584,7 @@ refreshStatsUI(Number(window.ethers.formatEther(pool)), Number(remaining));
 } catch (e) { /* 保持旧值 */}
 }
 /* ---------- Agent ID 门禁检测 ----------
- * 连接钱包 / 切换账户 / 切换网络 / 点「重新检测」时运行。
+ * 连接钱包 / 切换账户 / 点「重新检测」时运行。
  * fail safe：检测本身抛错（RPC 挂了等）→ gate="error"，hasAgentId 强制
  * 清零，参与按钮保持锁定，绝不沿用上一个账户的旧结果放行。
  * 序号 + 账户双重校验：检测途中切换了账户/网络，过期结果直接丢弃。 */
@@ -2380,9 +2366,9 @@ $$(".tab-page").forEach((p) => p.classList.toggle("active", p.id === "tab-" + na
 if (name === "cards") renderMyCards();
 }
 function applyNetwork() {
-if (state.pending) exitPending(); // 待出卡请求属于旧网络，切网后不再跟踪
+if (state.pending) exitPending(); // 待出卡请求属于旧会话，重新初始化后不再跟踪
 state.live = contractsConfigured() && hasEthers();
-state.hasAgentId = false; // 换网络必重验门禁
+state.hasAgentId = false; // 重新初始化必重验门禁
 state.agentGate = "na";
 state.gateSeq++;
 eventsSubscribed = false;
@@ -2412,7 +2398,6 @@ renderTicker();
 refreshIdentityUI();
 });
 }
-$("#networkSelect").value = state.network;
 // 标签页
 $$(".tab").forEach((t) => t.addEventListener("click", () => { SFX.click(); switchTab(t.dataset.tab);}));
 // 钱包
@@ -2425,6 +2410,17 @@ const g = await checkAgentGate();
 if (g === "ok") toast("✅ 已检测到 Agent ID，可以参与啦 🎉");
 else if (g === "no") { toast("仍未检测到 Agent ID — 请确认连接的是持有 name.ai 的钱包"); SFX.error(); }
 else if (g === "error") { toast("暂时无法验证 Agent ID，请稍后重试"); SFX.error(); }
+});
+// 无钱包指引：复制本页链接，去币安 App 内置浏览器打开
+const cpBtn = $("#copyLinkBtn");
+if (cpBtn) cpBtn.addEventListener("click", async () => {
+SFX.click();
+try {
+await navigator.clipboard.writeText(window.location.href);
+toast("链接已复制 — 打开币安 App，在 Web3 钱包的内置浏览器粘贴打开 📋", 3600);
+} catch (e) {
+toast("复制失败，请手动复制地址栏里的链接，再到币安 App 内打开", 3600);
+}
 });
 // 抽卡 / 领取 / 击碎
 $("#drawBtn").addEventListener("click", doDraw);
@@ -2447,13 +2443,6 @@ st.addEventListener("click", () => {
 const m = SFX.toggle();
 st.textContent = m? "🔇": "🔊";
 if (!m) SFX.click();
-});
-// 网络切换
-$("#networkSelect").addEventListener("change", (e) => {
-state.network = e.target.value;
-state.chainOk = false;
-applyNetwork();
-toast("已切换到 " + netCfg().label + (state.live? "": "（合约未部署，演示模式）"));
 });
 // 图鉴筛选
 $$("#tierFilters .chip").forEach((chip) =>
