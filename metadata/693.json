@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #693",
+  "description": "Panda Agent Card #693 — Common tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/mqsm7i32.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "butter"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "cocoa"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "round"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "smile"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "none"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "tee"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "none"
+    },
+    {
+      "trait_type": "Special",
+      "value": "sparkles"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    }
+  ]
+}

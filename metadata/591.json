@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #591",
+  "description": "Panda Agent Card #591 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/9n4dut0o.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "coral"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "cocoa"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "happy"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "gold_tooth"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "none"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "plain"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "lollipop"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

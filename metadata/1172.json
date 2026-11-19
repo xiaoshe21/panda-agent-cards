@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #1172",
+  "description": "Panda Agent Card #1172 — Common tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/c00tyk3q.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "star_night"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "qinling_brown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "half"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "flat"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "none"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "overalls"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "scarf"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    }
+  ]
+}

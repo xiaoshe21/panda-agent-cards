@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #908",
+  "description": "Panda Agent Card #908 — Common tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/kw89r6r2.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "butter"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "classic"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "round"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "grin"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "flower"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "overalls"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "scarf"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    }
+  ]
+}

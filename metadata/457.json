@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #457",
+  "description": "Panda Agent Card #457 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/nmhzvgkg.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "sand"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "ash"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "sparkle"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "gold_tooth"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "none"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "tee"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "sunglasses"
+    },
+    {
+      "trait_type": "Special",
+      "value": "glow"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

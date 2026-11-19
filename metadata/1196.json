@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #1196",
+  "description": "Panda Agent Card #1196 — Common tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/vs00eg97.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "rose"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "cocoa"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "half"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "surprised"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "chef"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "tee"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "bamboo"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    }
+  ]
+}

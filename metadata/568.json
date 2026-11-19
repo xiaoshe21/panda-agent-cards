@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #568",
+  "description": "Panda Agent Card #568 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/fykh18id.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "sage"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "classic"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "determined"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "munch"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "bandana"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "plain"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "scarf"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

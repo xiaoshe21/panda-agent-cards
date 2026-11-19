@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #507",
+  "description": "Panda Agent Card #507 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/hdxtznoj.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "sky"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "blush"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "round"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "smile"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "crown"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "tuxedo"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "bamboo"
+    },
+    {
+      "trait_type": "Special",
+      "value": "sparkles"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #41",
+  "description": "Panda Agent Card #41 — Ultra Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/t2egsfyv.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "neon_city"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "classic"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "hearts"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "smile"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "none"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "kimono"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "round_glasses"
+    },
+    {
+      "trait_type": "Special",
+      "value": "stars_fx"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Ultra Rare"
+    }
+  ]
+}

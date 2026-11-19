@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #788",
+  "description": "Panda Agent Card #788 — Common tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/j24rdfqy.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "mint"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "classic"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "wink"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "flat"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "bow"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "suit"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "bowtie"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    }
+  ]
+}

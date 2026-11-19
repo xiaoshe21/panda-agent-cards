@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #335",
+  "description": "Panda Agent Card #335 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/au40enue.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "stripes"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "ash"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "half"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "flat"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "none"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "kimono"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "none"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

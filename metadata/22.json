@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #22",
+  "description": "Panda Agent Card #22 — Ultra Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/by1ptg8v.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "golden_burst"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "golden"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "sleepy"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "grin"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "none"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "jersey"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "gold_chain"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Ultra Rare"
+    }
+  ]
+}

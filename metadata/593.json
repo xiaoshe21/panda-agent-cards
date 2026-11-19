@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #593",
+  "description": "Panda Agent Card #593 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/lru412cw.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "lilac"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "qinling_brown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "wink"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "grin"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "chef"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "tuxedo"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "star_shades"
+    },
+    {
+      "trait_type": "Special",
+      "value": "glow"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #34",
+  "description": "Panda Agent Card #34 — Ultra Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/b47duhza.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "neon_city"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "cocoa"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "hearts"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "flat"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "top_hat"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "tee"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "scarf"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Ultra Rare"
+    }
+  ]
+}

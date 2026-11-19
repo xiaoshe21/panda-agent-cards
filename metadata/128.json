@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #128",
+  "description": "Panda Agent Card #128 — Ultra Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/5ass39to.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "stripes"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "mecha"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "visor"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "smile"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "none"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "mecha_chest"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "gold_chain"
+    },
+    {
+      "trait_type": "Special",
+      "value": "gold_particles"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Ultra Rare"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #5",
+  "description": "Panda Agent Card #5 — Ultra Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/rrg82pdl.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "mint"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "snow"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "round"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "smirk"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "royal_crown"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "royal_robe"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "star_shades"
+    },
+    {
+      "trait_type": "Special",
+      "value": "glow"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Ultra Rare"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #861",
+  "description": "Panda Agent Card #861 — Common tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/wf9r3h36.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "bamboo_grove"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "classic"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "round"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "flat"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "beanie"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "plain"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "lollipop"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    }
+  ]
+}

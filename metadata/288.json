@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #288",
+  "description": "Panda Agent Card #288 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/mfy3utxl.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "butter"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "classic"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "wink"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "smile"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "none"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "tuxedo"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "gold_chain"
+    },
+    {
+      "trait_type": "Special",
+      "value": "glow"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

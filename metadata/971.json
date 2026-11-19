@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #971",
+  "description": "Panda Agent Card #971 — Common tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/mv5boh8g.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "sky"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "classic"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "round"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "smile"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "cap"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "striped_tee"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "round_glasses"
+    },
+    {
+      "trait_type": "Special",
+      "value": "stars_fx"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    }
+  ]
+}

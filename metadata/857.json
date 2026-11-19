@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #857",
+  "description": "Panda Agent Card #857 — Common tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/85s5zg8p.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "lavender"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "cocoa"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "round"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "tongue"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "none"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "tee"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "lollipop"
+    },
+    {
+      "trait_type": "Special",
+      "value": "confetti_fx"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    }
+  ]
+}

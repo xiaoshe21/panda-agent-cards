@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #278",
+  "description": "Panda Agent Card #278 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/g6f17icr.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "sky"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "qinling_brown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "starry"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "munch"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "beanie"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "jersey"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "none"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

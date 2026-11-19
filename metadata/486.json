@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #486",
+  "description": "Panda Agent Card #486 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/10mq0taq.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "pearl_gray"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "qinling_brown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "half"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "ooh"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "headphones"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "tuxedo"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "lollipop"
+    },
+    {
+      "trait_type": "Special",
+      "value": "glow"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

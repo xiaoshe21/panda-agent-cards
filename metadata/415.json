@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #415",
+  "description": "Panda Agent Card #415 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/cf4u2ykb.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "baby_blue"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "ash"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "starry"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "smile"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "none"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "scarf_coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "none"
+    },
+    {
+      "trait_type": "Special",
+      "value": "glow"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

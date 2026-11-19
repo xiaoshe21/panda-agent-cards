@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #642",
+  "description": "Panda Agent Card #642 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/wgg1q6fj.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "neon_city"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "classic"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "sleepy"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "flat"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "top_hat"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "armor"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "none"
+    },
+    {
+      "trait_type": "Special",
+      "value": "sparkles"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

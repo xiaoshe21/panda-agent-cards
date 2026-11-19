@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #179",
+  "description": "Panda Agent Card #179 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/d0ec1m7p.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "rose"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "classic"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "half"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "ooh"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "crown"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "plain"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "bowtie"
+    },
+    {
+      "trait_type": "Special",
+      "value": "sparkles"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

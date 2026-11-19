@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #21",
+  "description": "Panda Agent Card #21 — Ultra Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/311j0mmo.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "pearl_gray"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "qinling_brown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "wink"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "tongue"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "party"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "space_suit"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "sunglasses"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Ultra Rare"
+    }
+  ]
+}

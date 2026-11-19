@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #499",
+  "description": "Panda Agent Card #499 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/fvwbepu7.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "lavender"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "cocoa"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "happy"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "ooh"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "sprout"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "hoodie"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "earring"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

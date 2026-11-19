@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #427",
+  "description": "Panda Agent Card #427 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/roubwgaw.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "cream"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "blush"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "happy"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "grin"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "flower"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "hoodie"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "lollipop"
+    },
+    {
+      "trait_type": "Special",
+      "value": "sparkles"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

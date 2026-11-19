@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #248",
+  "description": "Panda Agent Card #248 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/9k90pkp8.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "baby_blue"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "blush"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "determined"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "tongue"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "chef"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "overalls"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "none"
+    },
+    {
+      "trait_type": "Special",
+      "value": "hearts_fx"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

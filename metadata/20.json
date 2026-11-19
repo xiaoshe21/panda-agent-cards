@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #20",
+  "description": "Panda Agent Card #20 — Ultra Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/kuu7nt6v.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "sand"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "classic"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "half"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "grin"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "royal_crown"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "suit"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "star_shades"
+    },
+    {
+      "trait_type": "Special",
+      "value": "hearts_fx"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Ultra Rare"
+    }
+  ]
+}

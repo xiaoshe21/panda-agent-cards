@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #960",
+  "description": "Panda Agent Card #960 — Common tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/9lpluego.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "star_night"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "qinling_brown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "happy"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "open"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "sprout"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "scarf_coat"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "bamboo"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #277",
+  "description": "Panda Agent Card #277 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/2m01huqo.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "lavender"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "classic"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "starry"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "open"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "crown"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "tee"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "none"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

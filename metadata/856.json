@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #856",
+  "description": "Panda Agent Card #856 — Common tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/tw6bs92q.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "cream"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "classic"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "sparkle"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "smirk"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "beanie"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "overalls"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "scarf"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    }
+  ]
+}

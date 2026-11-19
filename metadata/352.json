@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #352",
+  "description": "Panda Agent Card #352 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/u4u905kw.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "lilac"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "ash"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "starry"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "gold_tooth"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "none"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "jersey"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "bamboo"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

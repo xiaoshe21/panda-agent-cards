@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #679",
+  "description": "Panda Agent Card #679 — Common tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/pjd6qvsy.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "apricot"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "blush"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "determined"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "smirk"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "beanie"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "suit"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "none"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    }
+  ]
+}

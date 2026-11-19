@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #611",
+  "description": "Panda Agent Card #611 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/7373znbx.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "peach"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "galaxy_fur"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "round"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "surprised"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "sprout"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "suit"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "lollipop"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

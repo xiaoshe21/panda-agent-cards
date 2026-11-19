@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #521",
+  "description": "Panda Agent Card #521 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/rrgv8grz.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "sage"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "qinling_brown"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "happy"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "smile"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "party"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "kimono"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "bowtie"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

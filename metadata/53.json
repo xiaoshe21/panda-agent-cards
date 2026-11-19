@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #53",
+  "description": "Panda Agent Card #53 — Ultra Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/ni5bnixv.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "checker"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "mecha"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "visor"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "smirk"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "none"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "space_suit"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "none"
+    },
+    {
+      "trait_type": "Special",
+      "value": "none"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Ultra Rare"
+    }
+  ]
+}

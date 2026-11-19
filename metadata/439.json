@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #439",
+  "description": "Panda Agent Card #439 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/9dzkyxzr.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "confetti_bg"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "galaxy_fur"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "sparkle"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "smile"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "beanie"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "tee"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "none"
+    },
+    {
+      "trait_type": "Special",
+      "value": "confetti_fx"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

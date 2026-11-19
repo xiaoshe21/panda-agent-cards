@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #546",
+  "description": "Panda Agent Card #546 — Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/g26o6e05.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "rose"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "snow"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "round"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "grin"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "top_hat"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "tuxedo"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "square_glasses"
+    },
+    {
+      "trait_type": "Special",
+      "value": "sparkles"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

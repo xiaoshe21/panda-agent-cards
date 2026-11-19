@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #35",
+  "description": "Panda Agent Card #35 — Ultra Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/ja2s3h7v.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "golden_burst"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "golden"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "round"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "flat"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "chef"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "tuxedo"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "sunglasses"
+    },
+    {
+      "trait_type": "Special",
+      "value": "confetti_fx"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Ultra Rare"
+    }
+  ]
+}

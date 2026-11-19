@@ -1,0 +1,43 @@
+{
+  "name": "Panda Agent #98",
+  "description": "Panda Agent Card #98 — Ultra Rare tier panda agent from the Panda Agent Cards collection.",
+  "image": "https://pomf2.lain.la/f/gqtg0m1w.webp",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "golden_burst"
+    },
+    {
+      "trait_type": "Fur",
+      "value": "golden"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "wink"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "smile"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "sprout"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "striped_tee"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "star_shades"
+    },
+    {
+      "trait_type": "Special",
+      "value": "holo"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Ultra Rare"
+    }
+  ]
+}
